@@ -13,9 +13,9 @@
 				</headerToolbar>
 				<content>
 					<Text text="Panel Content" id="text2"/>
-					<Button xmlns="sap.m" text="Button" id="button1"/>
-					<Button xmlns="sap.m" text="Button" id="button2"/>
-					<Button xmlns="sap.m" text="Button" id="button3"/>
+					<Button xmlns="sap.m" text="Button" id="button1" press="buttonRead"/>
+					<Button xmlns="sap.m" text="Button" id="button2" press="buttonRead"/>
+					<Button xmlns="sap.m" text="Button" id="button3" press="buttonRead"/>
 				</content>
 			</Panel>
 		</content>

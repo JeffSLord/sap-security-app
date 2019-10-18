@@ -1,0 +1,1 @@
+{"type":"mta","builders":{"default":"mtabuilder","configs":{}},"runners":{"configs":{}},"attributes":{"sap.watt.common.setting":["{\"hdbInactiveFiles\":{\"inactiveFileList\":[\"/security-app/security_db/src/SP_GET_COUNTRY_FILTER.hdbprocedure\"]},\"build\":{\"targetFolder\":\"dist\",\"sourceFolder\":\"webapp\"}}"]},"mixinTypes":[]}

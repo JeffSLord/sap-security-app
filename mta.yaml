@@ -29,6 +29,8 @@ modules:
           url: '~{url}'
           forwardAuthToken: true
       - name: security-uaa
+    parameters:
+      port: 51999
 resources:
   - name: hdi_security_db
     parameters:

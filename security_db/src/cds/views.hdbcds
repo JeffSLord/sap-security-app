@@ -18,6 +18,7 @@ context views {
         // ;
         with structured privilege check;
 
+	// ignore
     view V_Airports2 as
         select from Airports
         {
@@ -28,9 +29,9 @@ context views {
                 altitude,
                 offsetUTC,
                 passengers
-        }
-        where
-            country in SESSION_CONTEXT('XS_COUNTRY');
+        };
+        // where
+        //     country in SESSION_CONTEXT('XS_COUNTRY');
 
     view V_CV_Airports as
         select from CV_Airports

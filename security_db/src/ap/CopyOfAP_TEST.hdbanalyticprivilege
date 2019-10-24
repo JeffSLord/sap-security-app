@@ -4,6 +4,5 @@
 <securedModels>
   <modelUri>CV_Airports</modelUri>
 </securedModels>
-<whereSql>&quot;country&quot; = 
-(JSON_VALUE((SELECT SESSION_CONTEXT('XS_COUNTRY') AS COUNTRY FROM DUMMY), '$[0]'))</whereSql>
-</Privilege:analyticPrivilege>
+<whereSql>&quot;country&quot; = (JSON_VALUE((SELECT SESSION_CONTEXT('XS_COUNTRY') AS COUNTRY FROM DUMMY), '$[0].COUNTRY'))</whereSql>
+</Privilege:analyticPrivilege> 

@@ -27,7 +27,6 @@ router.get('/edit', async(req, res) => {
 		body.message = '[ERROR] User is not authorized.';
 		body.has = false;
 		body.code = 401;
-
 	} else {
 		body.message = '[SUCCESS] User has scope EDIT';
 		body.has = true;

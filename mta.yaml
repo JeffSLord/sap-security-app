@@ -42,7 +42,7 @@ resources:
   - name: security-uaa
     type: com.sap.xs.uaa
     parameters:
-      path: ./xs-security.json
+      path: xs-security.json
   - name: myauditlog
     type: org.cloudfoundry.managed-service
     parameters:

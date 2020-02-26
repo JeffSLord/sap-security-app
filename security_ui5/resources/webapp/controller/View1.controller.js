@@ -21,7 +21,7 @@ sap.ui.define([
 			var iconBar = this.getView().byId("iconBar");
 			var adminFragment = sap.ui.xmlfragment("ui5_ns.security_ui5.view.AdminTab", this);
 			$.ajax({
-				url: '/api/scopes/read',
+				url: '/api/scopes/edit',
 				timeout: 360000,
 				headers: {
 					'Accept': 'application/json'

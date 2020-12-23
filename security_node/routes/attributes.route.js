@@ -6,7 +6,11 @@ router.get('/hasAttributes', async(req, res) => {
 });
 
 router.get('/hasCountry', async(req, res) => {
-	res.send(req.authInfo.getAttribute('COUNTRY'));
+	var userContext = req.authInfo;
+	var result = JSON.stringify({
+		userContext: userContext
+	});
+	res.type("application/json").status(200).send(result);
 });
 
 module.exports = router;
